@@ -12,7 +12,6 @@ const JizonStyleList = (props) => {
     const ref4ChildHeight = useRef();
 
     const animationDone = () => {
-        console.log("sadfasd");
         if (isTreeExpand) {
             ref4ChildHeight.current.style.height = 'auto';
         } else {
@@ -28,10 +27,10 @@ const JizonStyleList = (props) => {
             }
 
             if (isTreeExpand) {
-                setTimeout(() => { ref4ChildHeight.current.style.height = resultheight + "px"; }, 5);
+                setTimeout(() => { ref4ChildHeight.current.style.height = resultheight + "px"; }, 10);
                 ref4ChildHeight.current.style.height = "0px";
             } else {
-                setTimeout(() => { ref4ChildHeight.current.style.height = "0px"; }, 5);
+                setTimeout(() => { ref4ChildHeight.current.style.height = "0px"; }, 10);
                 ref4ChildHeight.current.style.height = resultheight + "px";
             }
         }
@@ -44,13 +43,13 @@ const JizonStyleList = (props) => {
     return (
         <ul className={styles.listStyle}>
             <span>
-                <span className={styles.treeExpandIcon} onClick={() => setIsTreeExpand(!isTreeExpand)}></span>
+                <span className={styles.treeExpandIcon + " " + (isTreeExpand ? styles.treeExpandIconOn : styles.treeExpandIconOff)} onClick={() => setIsTreeExpand(!isTreeExpand)}></span>
                 <span className={styles.ItemLegendIcon}></span>
                 <span className={styles.elementName}>
                     {props.name}
                 </span>
             </span>
-            <ul ref={ref4ChildHeight} onTransitionEnd={animationDone}>
+            <ul onTransitionEnd={animationDone} ref={ref4ChildHeight}>
                 {props.children}
             </ul>
         </ul>

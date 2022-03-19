@@ -19,7 +19,7 @@
     overflow-y: hidden;
 
     transition-property: height;
-    transition-duration: 0.2s;
+    transition-duration: 10s;
 }
 .listStyle li{
     list-style: none;
@@ -61,6 +61,17 @@
     content:url('./JizonStyleList_Icon/treechild_icon.svg');
     margin-left:12px;
     margin-right:5px;
+
+    transition-property: transform;
+    transition-duration: 0.2s;
+
+    transform:rotate(0deg);
+}
+.treeExpandIconOn {
+    transform:rotate(90deg);
+}
+.treeExpandIconOff {
+    transform:rotate(0deg);
 }
 .ItemLegendIcon {
     content:url('./JizonStyleList_Icon/jizon_icon.svg');
