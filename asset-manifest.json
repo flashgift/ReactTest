@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ReactTest/static/css/main.943907ef.css",
-    "main.js": "/ReactTest/static/js/main.5021c53d.js",
+    "main.css": "/ReactTest/static/css/main.74f91ad8.css",
+    "main.js": "/ReactTest/static/js/main.9d3138cd.js",
     "static/js/787.5dc94198.chunk.js": "/ReactTest/static/js/787.5dc94198.chunk.js",
     "index.html": "/ReactTest/index.html",
     "static/media/jizon_icon.svg": "/ReactTest/static/media/jizon_icon.02664c1accd7a55f9754.svg",
     "static/media/treechild_icon.svg": "/ReactTest/static/media/treechild_icon.c5b2f3957c6288e89c7b.svg",
-    "main.943907ef.css.map": "/ReactTest/static/css/main.943907ef.css.map",
-    "main.5021c53d.js.map": "/ReactTest/static/js/main.5021c53d.js.map",
+    "main.74f91ad8.css.map": "/ReactTest/static/css/main.74f91ad8.css.map",
+    "main.9d3138cd.js.map": "/ReactTest/static/js/main.9d3138cd.js.map",
     "787.5dc94198.chunk.js.map": "/ReactTest/static/js/787.5dc94198.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.943907ef.css",
-    "static/js/main.5021c53d.js"
+    "static/css/main.74f91ad8.css",
+    "static/js/main.9d3138cd.js"
   ]
 }
