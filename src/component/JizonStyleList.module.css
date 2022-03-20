@@ -19,7 +19,7 @@
     overflow-y: hidden;
 
     transition-property: height;
-    transition-duration: 10s;
+    transition-duration: 0.4s;
 }
 .listStyle li{
     list-style: none;
@@ -77,4 +77,14 @@
     content:url('./JizonStyleList_Icon/jizon_icon.svg');
     margin-left:6px;
     margin-right:8px;
+}
+
+
+
+
+.elementName {
+    transition: text-indent 0.2s;
+}
+.listStyle>ul li span:hover .elementName, .listStyle>span:hover .elementName {
+    text-indent:10px;
 }
